@@ -37,8 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'rest_framework',
-    #'django_cron',
+    'rest_framework',
+    'django_cron',
+    'LogsApp',
+    'InvestigationApp',
+    'RequestApp'
 ]
 
 MIDDLEWARE = [
@@ -52,7 +55,7 @@ MIDDLEWARE = [
 ]
 
 CRON_CLASSES = [
-    "investigation.cron.CronJob_GPTRequest"
+    "InvestigationApp.cron.CronJob_GPTRequest"
     # ...
 ]
 
