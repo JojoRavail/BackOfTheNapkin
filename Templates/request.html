@@ -1,7 +1,9 @@
+{% load rest_framework %}
 
-
+<html><body>
 <form action="/request/" method="post">
     {% csrf_token %}
-    {{ Requestform }}
+    {% render_form serializer %}
     <input type="submit" value="Submit">
 </form>
+</body></html>
